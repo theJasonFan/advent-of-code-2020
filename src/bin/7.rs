@@ -35,6 +35,7 @@ pub struct Bag {
     children: Option<Vec<BagChild>>,
 }
 
+#[allow(clippy::single_char_pattern)]
 pub fn parse_line(line: &str) -> Bag {
     if line.ends_with("contain no other bags.") {
         let tokens: Vec<&str> = line.split(" ").collect();
