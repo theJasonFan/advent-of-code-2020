@@ -31,7 +31,7 @@ fn first_wrong(preamble: usize, input: &[usize]) -> Option<usize> {
             continue;
         }
 
-        if !in_basis(&input[(i - 25)..i], *n) {
+        if !in_basis(&input[(i - preamble)..i], *n) {
             ans = Some(*n);
             break;
         }

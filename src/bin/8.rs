@@ -149,8 +149,6 @@ fn op_from_str(s: &str) -> Option<Op> {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
-
     #[test]
     fn test_parse_signed_str() {
         let s = "+1";
